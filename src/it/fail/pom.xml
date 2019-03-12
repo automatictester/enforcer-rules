@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+   <groupId>uk.co.automatictester</groupId>
+   <artifactId>enforcer-rules-it-negative</artifactId>
+   <version>1.0</version>
+   <modelVersion>4.0.0</modelVersion>
+
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+   </properties>
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <version>3.0.0-M1</version>
+            <dependencies>
+               <dependency>
+                  <groupId>@project.groupId@</groupId>
+                  <artifactId>@project.artifactId@</artifactId>
+                  <version>@project.version@</version>
+               </dependency>
+            </dependencies>
+            <executions>
+               <execution>
+                  <id>enforce</id>
+                  <goals>
+                     <goal>enforce</goal>
+                  </goals>
+                  <configuration>
+                     <rules>
+                        <requireVersionRule implementation="uk.co.automatictester.enforcer.rules.RequireVersionRule">
+                           <versionPattern>\d\.\d\.\d(?:-SNAPSHOT|$)</versionPattern>
+                        </requireVersionRule>
+                     </rules>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+
+</project>
