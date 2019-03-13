@@ -35,7 +35,7 @@
                   <configuration>
                      <rules>
                         <requireVersionRule implementation="uk.co.automatictester.enforcer.rules.RequireVersionRule">
-                           <versionPattern>\d\.\d\.\d(?:-SNAPSHOT|$)</versionPattern>
+                           <versionPattern>^\d+\.\d+\.\d+(?:-SNAPSHOT|$)$</versionPattern>
                         </requireVersionRule>
                      </rules>
                   </configuration>
