@@ -5,7 +5,7 @@ import org.apache.maven.enforcer.rule.api.EnforcerRuleException;
 import org.apache.maven.enforcer.rule.api.EnforcerRuleHelper;
 import org.codehaus.plexus.component.configurator.expression.ExpressionEvaluationException;
 
-public class RequireVersionRule implements EnforcerRule {
+public class RequireVersionPattern implements EnforcerRule {
 
     private String versionPattern;
 

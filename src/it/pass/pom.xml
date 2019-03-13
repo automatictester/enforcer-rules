@@ -34,9 +34,9 @@
                   </goals>
                   <configuration>
                      <rules>
-                        <requireVersionRule implementation="uk.co.automatictester.enforcer.rules.RequireVersionRule">
+                        <requireVersionPattern implementation="uk.co.automatictester.enforcer.rules.RequireVersionPattern">
                            <versionPattern>^\d+\.\d+\.\d+$</versionPattern>
-                        </requireVersionRule>
+                        </requireVersionPattern>
                      </rules>
                   </configuration>
                </execution>
