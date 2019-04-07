@@ -37,7 +37,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <enforcer.version>3.0.0-M1</enforcer.version>
+        <enforcer.version>3.0.0-M2</enforcer.version>
         <maven.version>3.6.0</maven.version>
     </properties>
 
