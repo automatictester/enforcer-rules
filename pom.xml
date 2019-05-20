@@ -11,6 +11,7 @@
     <name>enforcer-rules</name>
     <description>Custom rules for Maven Enforcer Plugin</description>
     <url>https://github.com/automatictester/enforcer-rules</url>
+    <inceptionYear>2019</inceptionYear>
 
     <licenses>
         <license>
