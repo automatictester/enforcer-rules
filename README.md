@@ -1,6 +1,5 @@
 # enforcer-rules
 
-[![Build Status](https://travis-ci.com/automatictester/enforcer-rules.svg?branch=master)](https://travis-ci.com/automatictester/enforcer-rules)
 [![Central status](https://maven-badges.herokuapp.com/maven-central/uk.co.automatictester/enforcer-rules/badge.svg)](https://maven-badges.herokuapp.com/maven-central/uk.co.automatictester/enforcer-rules)
 
 Custom rules for Maven Enforcer Plugin.
